@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>English Quest: Opinions & Festivals</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{--b1:#6a3df0;--b2:#e8449b;--b3:#ff9f43;--card:#fff;--tx:#25203a;--mut:#6b6485;--pri:#ff3d8b;--pri2:#6a3df0;--ok:#12a150;--okbg:#dff7e8;--no:#e03131;--nobg:#ffe3e3;--bd:#e6dcf5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--b1:#2b1a6e;--b2:#7a1f57;--b3:#8a4a12;--card:#2a2240;--tx:#f5eefc;--mut:#bdb2d0;--okbg:#14402880;--nobg:#4d1f2680;--bd:#41355c;--ok:#4fd48a;--no:#ff8080}}
+:root[data-theme="dark"]{--b1:#2b1a6e;--b2:#7a1f57;--b3:#8a4a12;--card:#2a2240;--tx:#f5eefc;--mut:#bdb2d0;--okbg:#14402880;--nobg:#4d1f2680;--bd:#41355c;--ok:#4fd48a;--no:#ff8080}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,var(--b1),var(--b2) 55%,var(--b3)) fixed;color:var(--tx);font:17px/1.45 "Fredoka","Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:16px 14px 40px}
+h1{font-size:34px;line-height:1.1;margin:10px 0;color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.18)}
+main>h2{color:#fff;font-size:26px;margin:8px 0 2px;text-shadow:0 2px 0 rgba(0,0,0,.18)}
+.card h2{font-size:21px;margin:4px 0;color:var(--tx)}
+.hero{text-align:center;padding:14px 0 4px}.hero .em{font-size:64px;display:inline-block;animation:bob 2.4s ease-in-out infinite}.hero p{color:#fff;opacity:.92;margin:0 0 6px}
+.tags{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:8px 0 4px}.tags span{background:rgba(255,255,255,.22);color:#fff;padding:4px 11px;border-radius:99px;font-size:14px;backdrop-filter:blur(4px)}
+.card{background:var(--card);border-radius:22px;padding:16px;margin:14px 0;box-shadow:0 8px 0 rgba(0,0,0,.14),0 14px 28px rgba(0,0,0,.14);animation:rise .35s ease both}
+.mut{color:var(--mut);font-size:15px}
+.chip{display:inline-block;background:rgba(255,255,255,.25);color:#fff;border-radius:99px;padding:5px 13px;font-size:15px;margin:0}
+.intro{color:#fff;opacity:.95;margin:2px 0 6px}
+input{width:100%;font:inherit;font-size:19px;padding:13px 14px;border-radius:16px;border:3px solid var(--bd);background:var(--card);color:var(--tx);margin:10px 0;outline:0}input:focus{border-color:var(--pri2)}
+.btn{display:block;width:100%;font:inherit;font-weight:700;font-size:18px;padding:14px;border:0;border-radius:16px;background:linear-gradient(135deg,#ff3d8b,#ff7a45);color:#fff;cursor:pointer;margin-top:12px;box-shadow:0 5px 0 rgba(0,0,0,.2);transition:transform .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.2)}
+.btn.alt{background:linear-gradient(135deg,#6a3df0,#3d8bff)}.btn:disabled{opacity:.45}
+.opt{display:block;width:100%;text-align:left;font:inherit;color:var(--tx);background:var(--card);border:3px solid var(--bd);border-radius:16px;padding:11px 14px;margin:8px 0;cursor:pointer;transition:transform .1s,border-color .1s}
+.opt:not(:disabled):hover{border-color:var(--pri2);transform:translateX(3px)}
+.opt.ok{background:var(--okbg);border-color:var(--ok);animation:pop .35s}.opt.no{background:var(--nobg);border-color:var(--no);animation:shake .35s}
+.q{font-weight:700;font-size:18px;margin-bottom:4px}.fb{font-size:15px;font-weight:600}
+.bar{height:14px;background:rgba(255,255,255,.28);border-radius:9px;overflow:hidden;margin:10px 0 14px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#ffe66d,#ffffff);border-radius:9px;transition:width .4s}
+.w{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:8px 10px;border-bottom:1px solid var(--bd);text-align:left;white-space:nowrap}
+textarea{width:100%;height:90px;font:14px monospace;border-radius:12px;border:3px solid var(--bd);background:var(--card);color:var(--tx);padding:8px}
+.big{font-size:70px;text-align:center;animation:pop .6s}
+.how{background:var(--card);border-radius:18px;padding:12px 14px;margin:10px 0;border-left:8px solid #ffc83d;box-shadow:0 5px 0 rgba(0,0,0,.12);animation:rise .35s ease both}.how .ex{margin-top:6px;font-size:15px;background:var(--bd);border-radius:10px;padding:6px 10px}
+.cf{position:fixed;top:-40px;z-index:9;pointer-events:none;animation:fall linear forwards}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-6deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+@keyframes pop{50%{transform:scale(1.04)}}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+</head>
+<body>
+<main id="app"></main>
+<script>
+var SECS=[
+{t:"1. Opinions",h:["Read each sentence. Is it a question about an opinion, a good opinion or a bad opinion? Tap your answer.", "Прочитай предложение. Это вопрос о мнении, хорошее мнение или плохое? Нажми на ответ.", "How was the concert? → Asks for an opinion"],i:"Which kind of sentence is it?",fix:1,o:["Asks for an opinion","Positive opinion ✓","Negative opinion ✗"],q:[
+["What was it like?",0],["It was fantastic!",1],["The dancers were amazing!",1],["Did you enjoy it?",0],["Not really.",2],["It was nothing special.",2]]},
+{t:"2. Same meaning",h:["Find the sentence with the same meaning. The words are different, but the idea is the same.", "Найди предложение с тем же смыслом. Слова разные, а смысл одинаковый.", "Brilliant! = Fantastic!"],i:"Choose the sentence with the same meaning.",q:[
+["Of course!",["Sure!","Not really.","It was fantastic!"]],
+["What did you think of it?",["What was it like?","Where were you?","Of course!"]],
+["Did you have a good time?",["Did you enjoy it?","Did you call me?","Was it special?"]],
+["It wasn’t great.",["It was nothing special.","It was fantastic!","The dancers were amazing!"]]]},
+{t:"3. The dialogue",h:["Read the dialogue between Jane and Aidar in your book (page 36). Then answer the questions.", "Прочитай диалог Джейн и Айдара в учебнике (стр. 36). Потом ответь на вопросы.", "Tip: the answers are in the dialogue. Look for key words."],i:"Jane and Aidar talk about Saturday. Choose the answer.",q:[
+["Where was Jane on Saturday?",["At the ballet","At home","At the cinema"]],
+["Why didn’t Jane answer the phone?",["She was at the ballet.","She was sleeping.","She lost her phone."]],
+["What did Aidar do on Saturday?",["He stayed home and watched a film.","He went to the ballet.","He went for a walk."]],
+["Did Aidar like the film?",["No, it was nothing special.","Yes, it was fantastic!","He didn’t watch it."]],
+["What do they want to do later?",["Go for a walk","Watch TV","Go to the ballet"]]]},
+{t:"4. True or False",h:["Read the texts on page 37. If the sentence says the same as the text, tap True. If not, tap False.", "Прочитай тексты на стр. 37. Если предложение совпадает с текстом, нажми True. Если нет, нажми False.", "Shakespeare was a doctor. → False (he was a playwright)"],i:"Read the texts about festivals. True or false?",fix:1,o:["True","False"],q:[
+["Shakespeare was probably born on 23rd April.",0],["Shakespeare died in 1616.",0],["A local teenager carries a quill in the parade.",0],
+["The mayor puts flowers on Shakespeare’s grave.",0],["The Festival of Nomadic Civilisation is in Almaty.",1],["The Festival of Nomadic Civilisation is in July.",0],["Yurts are set around the Khan Shatyr shopping centre.",0]]},
+{t:"5. Words",h:["Read the meaning and choose the word that matches it.", "Прочитай значение и выбери подходящее слово.", "A place where you buy books → bookshop"],i:"Choose the correct word.",q:[
+["A person who writes plays",["playwright","mayor","nomad"]],
+["A group of people walking through the streets to celebrate",["parade","grave","craft"]],
+["The leader of a town",["mayor","nomad","playwright"]],
+["The place where a dead person is buried",["grave","yurt","parade"]],
+["A person who moves from place to place with animals",["nomad","mayor","playwright"]],
+["A traditional round tent",["yurt","grave","craft"]]]},
+{t:"6. Complete the table",h:["Choose the right information about each festival: when it is, where it is and what people do.", "Выбери правильную информацию о каждом празднике: когда, где и что делают люди.", "Tip: look at the texts and the table on page 37."],i:"Festivals around the world: choose the correct information.",q:[
+["Shakespeare’s Birthday: time of year?",["23rd April","July","October"]],
+["Shakespeare’s Birthday: place?",["Stratford-upon-Avon, UK","Astana, Kazakhstan","London, UK"]],
+["Shakespeare’s Birthday: activities?",["A parade, marching bands, flowers on the grave","Yurts, food and crafts","Fireworks and a football match"]],
+["Festival of Nomadic Civilisation: time of year?",["July","April","December"]],
+["Festival of Nomadic Civilisation: place?",["Astana, near Khan Shatyr","Stratford-upon-Avon","Almaty"]],
+["Festival of Nomadic Civilisation: activities?",["Yurts, food, crafts, music and dance","A parade with a quill","Reading plays in the theatre"]],
+["What makes the Festival of Nomadic Civilisation unique?",["It is the only festival celebrating traditional nomadic culture.","It is the oldest festival in the UK.","It is held every day."]]]}
+];
+var MAX=SECS.reduce(function(a,s){return a+s.q.length},0);
+var name="",si=0,scores=[],done=0,sc=0,db=null,uid=null,canT=false,saved="";
+var app=document.getElementById("app");
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function total(){return scores.reduce(function(a,b){return a+(b||0)},0)}
+
+(async function(){try{
+ if(!window.claude)return;
+ db=await claude.use("db");var u=await claude.use("user");
+ if(u){uid=await u.id();canT=await u.canEdit();if(canT&&!name)home()}
+}catch(e){db=null}})();
+
+function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;var e=["🎉","⭐","🎭","✨","🏆","🎊"];for(var i=0;i<36;i++){var x=document.createElement("span");x.className="cf";x.textContent=e[i%e.length];x.style.left=Math.random()*100+"vw";x.style.fontSize=(18+Math.random()*20)+"px";x.style.animationDuration=(2.5+Math.random()*2.5)+"s";x.style.animationDelay=Math.random()*.8+"s";document.body.appendChild(x);setTimeout(function(n){n.remove()},6000,x)}}
+function enc(s){return btoa(unescape(encodeURIComponent(s))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+function dec(s){s=s.replace(/-/g,"+").replace(/_/g,"/");while(s.length%4)s+="=";return decodeURIComponent(escape(atob(s)))}
+function chk(s){var h=7;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%99991;return h.toString(36)}
+function mkCode(){var p=enc(name.replace(/\|/g," ")+"|"+scores.join(",")+"|"+Math.floor(Date.now()/60000));return"EQ."+p+"."+chk(p)}
+function parseCode(c){var m=String(c).trim().match(/^EQ\.([\w-]+)\.(\w+)$/);if(!m||chk(m[1])!==m[2])return null;try{var a=dec(m[1]).split("|"),sc=a[1].split(",").map(Number);if(sc.length!==SECS.length||sc.some(function(v,i){return!(v>=0&&v<=SECS[i].q.length)}))return null;return{name:a[0],scores:sc,t:+a[2]*60000}}catch(e){return null}}
+function store(){try{return JSON.parse(localStorage.getItem("eq_res")||"[]")}catch(e){return[]}}
+function put(a){try{localStorage.setItem("eq_res",JSON.stringify(a))}catch(e){}}
+function grade(n){return Math.max(1,Math.round(n/3.5))}
+function teacherTab(){
+ app.innerHTML='<h1>👩‍🏫 Teacher tab</h1><div class="card"><b>Paste student codes</b> <span class="mut">(one per line)</span><textarea id="in" placeholder="EQ.xxxx.yy"></textarea><button class="btn" id="add">Add to table</button><div class="mut" id="msg"></div></div><div class="card"><div class="w" id="tb"></div></div><button class="btn alt" id="bk">← Back</button><button class="btn alt" id="clr" style="background:#8a8296">🗑 Clear table</button>';
+ var tb=document.getElementById("tb"),msg=document.getElementById("msg");
+ function draw(){var r=store().sort(function(a,b){return String(a.name).localeCompare(String(b.name))});
+  if(!r.length){tb.textContent="No results yet. Paste codes above.";return}
+  tb.innerHTML='<table><tr><th>Name</th>'+SECS.map(function(x,i){return"<th>"+(i+1)+"</th>"}).join("")+'<th>Total</th><th>Grade /10</th></tr>'+
+  r.map(function(x){var n=x.scores.reduce(function(a,b){return a+b},0);return"<tr><td>"+esc(x.name)+"</td>"+x.scores.map(function(v){return"<td>"+v+"</td>"}).join("")+"<td><b>"+n+"/"+MAX+"</b></td><td><b>"+grade(n)+"</b></td></tr>"}).join("")+"</table>"}
+ document.getElementById("add").onclick=function(){
+  var lines=document.getElementById("in").value.split(/\s+/).filter(Boolean),ok=0,bad=0,a=store();
+  lines.forEach(function(l){var p=parseCode(l);if(!p){bad++;return}
+   a=a.filter(function(x){return x.name!==p.name||x.t>p.t});if(!a.some(function(x){return x.name===p.name&&x.t>=p.t}))a.push(p);ok++});
+  put(a);document.getElementById("in").value="";msg.textContent="Added: "+ok+(bad?" · not recognised: "+bad:"");draw()};
+ var cl=document.getElementById("clr"),armed=0;
+ cl.onclick=function(){if(!armed){armed=1;cl.textContent="Tap again to delete everything";setTimeout(function(){armed=0;cl.textContent="🗑 Clear table"},4000)}else{put([]);armed=0;cl.textContent="🗑 Clear table";draw()}};
+ document.getElementById("bk").onclick=home;draw();
+}
+function home(){
+ app.innerHTML='<div class="hero"><div class="em">🎭</div><h1>English Quest</h1><p>Opinions & Festivals around the world</p><div class="tags"><span>Module 3</span><span>3d Everyday English</span><span>3e Across Cultures</span></div></div><div class="card"><h2>Ready to play? 🚀</h2><p class="mut">6 quick levels · 35 questions · get as many ⭐ as you can!</p><div class="mut" style="margin:6px 0">1️⃣ Write your name<br>2️⃣ Read “What to do” in every level<br>3️⃣ Tap one answer (only one try!)<br>4️⃣ Green ✅ = correct, red ❌ = wrong<br>5️⃣ Press Next when you finish</div>'+
+ '<label for="n"><b>What’s your name?</b></label><input id="n" placeholder="Name Surname" maxlength="40" autocomplete="off">'+
+ '<button class="btn" id="go" disabled>Let’s go! ▶</button></div>'+
+ (canT?'<button class="btn alt" id="tc">👩‍🏫 Teacher: signed-in results</button>':'')+'<button class="btn alt" id="tt" style="background:rgba(255,255,255,.22);font-size:15px;box-shadow:none">👩‍🏫 Teacher tab</button>';
+ var n=document.getElementById("n"),g=document.getElementById("go");
+ n.oninput=function(){g.disabled=n.value.trim().length<2};
+ g.onclick=function(){name=n.value.trim();si=0;scores=[];sec()};
+ if(canT)document.getElementById("tc").onclick=teacher;document.getElementById("tt").onclick=teacherTab;
+}
+
+function sec(){
+ var S=SECS[si];done=0;sc=0;
+ var h='<p class="chip">👤 '+esc(name)+' · ⭐ '+total()+'/'+MAX+'</p><div class="bar"><i style="width:'+(si/SECS.length*100)+'%"></i></div>'+
+ '<h2>'+S.t+'</h2><p class="intro">'+S.i+'</p><div class="how"><b>📝 What to do</b><br>'+S.h[0]+'<br><span class="mut">🇷🇺 '+S.h[1]+'</span><div class="ex">💡 Example: '+S.h[2]+'</div></div>';
+ S.q.forEach(function(q,k){
+  var opts=S.fix?S.o:shuf(q[1]),ans=S.fix?S.o[q[1]]:q[1][0];
+  h+='<div class="card" data-k="'+k+'"><div class="q">'+(k+1)+'. '+q[0]+'</div>'+
+  opts.map(function(o){return'<button class="opt" data-a="'+(o===ans?1:0)+'">'+o+'</button>'}).join("")+'<div class="fb"></div></div>';
+ });
+ h+='<button class="btn" id="nx" disabled>Next ▶</button>';
+ app.innerHTML=h;window.scrollTo(0,0);
+ var nx=document.getElementById("nx");
+ document.querySelectorAll(".card").forEach(function(c){
+  c.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){
+   if(c.dataset.d)return;c.dataset.d=1;done++;
+   var right=b.dataset.a==="1";if(right)sc++;
+   c.querySelectorAll(".opt").forEach(function(x){x.disabled=true;if(x.dataset.a==="1")x.classList.add("ok")});
+   if(!right)b.classList.add("no");
+   c.querySelector(".fb").textContent=right?"✅ Great!":"❌ Not quite — the correct answer is green.";
+   if(done===S.q.length){nx.disabled=false;nx.textContent=si===SECS.length-1?"Finish 🏁":"Next ▶"}
+  }});
+ });
+ nx.onclick=async function(){
+  scores[si]=sc;nx.disabled=true;
+  var last=si===SECS.length-1;
+  await save(last);
+  if(last)finish();else{si++;sec()}
+ };
+}
+
+async function save(fin){
+ if(!db||!uid){saved="no";return}
+ try{await db.collection("results").doc(uid).set({name:name,scores:scores.slice(),total:total(),max:MAX,fin:!!fin,t:Date.now()});saved="ok"}
+ catch(e){saved="err"}
+}
+
+function finish(){
+ var t=total(),p=t/MAX,st=p>=.9?"🌟🌟🌟":p>=.7?"🌟🌟":p>=.5?"🌟":"💪";
+ var code=mkCode(),line=name+": "+t+"/"+MAX+" ("+SECS.map(function(s,i){return s.t.split(".")[0]+":"+scores[i]+"/"+s.q.length}).join(", ")+")";
+ app.innerHTML='<div class="big">'+st+'</div><h1 style="text-align:center">Awesome, '+esc(name)+'!</h1>'+
+ '<div class="card"><h2 style="text-align:center">'+t+' / '+MAX+'</h2>'+
+ SECS.map(function(s,i){return'<div>'+s.t+': <b>'+scores[i]+'/'+s.q.length+'</b></div>'}).join("")+'</div>'+
+ '<div class="card"><h2>📨 Send your result to the teacher</h2><p class="mut">Copy this code and send it to your teacher (or show your teacher this screen).</p><textarea readonly id="cp">'+esc(code)+'</textarea><button class="btn" id="cpb">📋 Copy code</button>'+(saved==="ok"?'<p class="mut">✅ Also saved automatically.</p>':'')+'</div>'+
+ '<button class="btn alt" id="ag">Try again 🔁</button>';
+ document.getElementById("ag").onclick=home;confetti();
+ var c=document.getElementById("cp"),cb=document.getElementById("cpb");c.onclick=function(){c.select()};cb.onclick=function(){c.select();var ok=function(){cb.textContent="✅ Copied!"};try{navigator.clipboard.writeText(c.value).then(ok,function(){try{document.execCommand("copy");ok()}catch(e){}})}catch(e){try{document.execCommand("copy");ok()}catch(_){}}};
+}
+
+function teacher(){
+ app.innerHTML='<h1>👩‍🏫 Results</h1><div class="card"><div class="w" id="tb">Loading…</div></div><button class="btn alt" id="bk">← Back</button>';
+ document.getElementById("bk").onclick=home;
+ var to=setTimeout(function(){document.getElementById("tb").textContent="No data yet."},10000);
+ try{db.collection("results").onSnapshot(function(s){
+  clearTimeout(to);
+  var r=s.docs.map(function(d){return d.data()}).sort(function(a,b){return String(a.name).localeCompare(String(b.name))});
+  var el=document.getElementById("tb");if(!el)return;
+  if(!r.length){el.textContent="No students yet.";return}
+  el.innerHTML='<table><tr><th>Name</th>'+SECS.map(function(x,i){return'<th>'+(i+1)+'</th>'}).join("")+'<th>Total</th><th>Status</th></tr>'+
+  r.map(function(x){return'<tr><td>'+esc(x.name)+'</td>'+SECS.map(function(_,i){return'<td>'+((x.scores||[])[i]==null?"–":x.scores[i])+'</td>'}).join("")+
+   '<td><b>'+x.total+'/'+x.max+'</b></td><td>'+(x.fin?"✅ done":"⏳ in progress")+'</td></tr>'}).join("")+'</table>'+
+  '<p class="mut">Columns 1–6 = sections. Max per section: '+SECS.map(function(s){return s.q.length}).join(", ")+'.</p>';
+ },function(){document.getElementById("tb").textContent="Could not load results."})}catch(e){document.getElementById("tb").textContent="Could not load results."}
+}
+home();
+</script>
+</body>
+</html>
